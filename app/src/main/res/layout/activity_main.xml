@@ -76,6 +76,15 @@
         android:layout_toRightOf="@+id/buttonGet"
         android:layout_toEndOf="@+id/buttonGet" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DELETE"
+        android:id="@+id/buttonDelete"
+        android:layout_alignTop="@+id/buttonPost"
+        android:layout_toRightOf="@+id/buttonPost"
+        android:layout_toEndOf="@+id/buttonPost" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

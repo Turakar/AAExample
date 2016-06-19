@@ -53,8 +53,20 @@ public class MainActivity extends AppCompatActivity {
 
     @Background
     protected void doPost() {
-        Saying saying = client.post(editTextName.getText().toString(),
+        User user = new User(editTextName.getText().toString(),
                 editTextAddress.getText().toString());
+        Saying saying = client.post(user);
+        displaySaying(saying);
+    }
+
+    @Click(R.id.buttonDelete)
+    protected void buttonDelete() {
+        doDelete();
+    }
+
+    @Background
+    protected void doDelete() {
+        Saying saying = client.delete(editTextName.getText().toString());
         displaySaying(saying);
     }
 
